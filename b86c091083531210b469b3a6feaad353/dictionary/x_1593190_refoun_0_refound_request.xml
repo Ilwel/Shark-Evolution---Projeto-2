@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3c8e41d083531210b469b3a6feaad303" extends="task" label="Refound Request" max_length="40" name="x_1593190_refoun_0_refound_request" type="collection">
+        <element default="0" label="Dollar Amount Spent" max_length="20" name="dollar_amount_spent" type="currency"/>
+        <element label="Spent Date" max_length="255" name="spent_date" type="glide_date"/>
+        <element default="0" label="Amount Spent" max_length="20" name="amount_spent" type="currency"/>
+        <element label="Category" max_length="32" name="category" reference="x_1593190_refoun_0_refound_category" type="reference"/>
+        <element label="Refound Description" max_length="241" name="refound_description" type="string"/>
+        <element label="Reproval Reason" max_length="241" name="reproval_reason" type="string"/>
+    </element>
+</database>

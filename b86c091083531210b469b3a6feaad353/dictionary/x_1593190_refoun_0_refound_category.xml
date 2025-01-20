@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0ede49d083531210b469b3a6feaad31b" label="Refound Category" max_length="40" name="x_1593190_refoun_0_refound_category" type="collection">
+        <element label="Solver Group" max_length="32" name="solver_group" reference="sys_user_group" type="reference"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <index name="index">
+            <element name="solver_group"/>
+        </index>
+    </element>
+</database>
