@@ -4,27 +4,27 @@
         <admin_overrides>false</admin_overrides>
         <advanced>false</advanced>
         <applies_to/>
-        <condition table="x_1593190_refoun_0_refound_request.*">state!=3^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        <condition table="x_1593190_refoun_0_refound_request.state">state!=3^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <decision_type>allow</decision_type>
-        <description>Allow write for all fields in x_1593190_refoun_0_refound_request, for users with role x_1593190_refoun_0.rh_manager, and if the ACL condition (state!=3^EQ) evaluates to true.</description>
+        <description>Allow write for state in x_1593190_refoun_0_refound_request, for users with roles (x_1593190_refoun_0.rh_manager, x_1593190_refoun_0.rh_solver), and if the ACL condition (state!=3^EQ) evaluates to true.</description>
         <local_or_existing>Local</local_or_existing>
-        <name>x_1593190_refoun_0_refound_request.*</name>
+        <name>x_1593190_refoun_0_refound_request.state</name>
         <operation display_value="write">write</operation>
         <script/>
         <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-20 14:24:29</sys_created_on>
-        <sys_id>358e81d083531210b469b3a6feaad301</sys_id>
+        <sys_created_on>2025-01-21 17:41:08</sys_created_on>
+        <sys_id>95f4cba8835f5210b469b3a6feaad38f</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>x_1593190_refoun_0_refound_request.*</sys_name>
+        <sys_name>x_1593190_refoun_0_refound_request.state</sys_name>
         <sys_package display_value="Refound System" source="x_1593190_refoun_0">b86c091083531210b469b3a6feaad353</sys_package>
         <sys_policy/>
         <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
-        <sys_update_name>sys_security_acl_358e81d083531210b469b3a6feaad301</sys_update_name>
+        <sys_update_name>sys_security_acl_95f4cba8835f5210b469b3a6feaad38f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-21 19:05:44</sys_updated_on>
+        <sys_updated_on>2025-01-21 19:07:12</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

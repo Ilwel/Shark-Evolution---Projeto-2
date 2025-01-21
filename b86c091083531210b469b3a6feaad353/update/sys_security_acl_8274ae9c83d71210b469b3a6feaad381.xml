@@ -4,16 +4,13 @@
         <admin_overrides>true</admin_overrides>
         <advanced>true</advanced>
         <applies_to/>
-        <condition table="x_1593190_refoun_0_refound_request">stateIN2,3^EQ<item display_value="2,3" endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="2,3"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </condition>
+        <condition/>
         <decision_type>allow</decision_type>
-        <description>Allow read for records in x_1593190_refoun_0_refound_request, for users with role x_1593190_refoun_0.rh_solver, and if the ACL script returns true, and if the ACL condition (stateIN2,3^EQ) evaluates to true.</description>
+        <description>Allow read for records in x_1593190_refoun_0_refound_request, for users with role x_1593190_refoun_0.refound_requester, and if the ACL script returns true.</description>
         <local_or_existing>Local</local_or_existing>
         <name>x_1593190_refoun_0_refound_request</name>
         <operation display_value="read">read</operation>
-        <script><![CDATA[const category = current.getValue("category");
-if(gs.getUser().isMemberOf(current.category.solver_group.name.toString())){
+        <script><![CDATA[if(current.opened_by.user_name == gs.getUserName() || current.opened_by.manager.user_name == gs.getUserName()){
 	anwser = true;
 }else{
 	anwser = false;
@@ -21,26 +18,26 @@ if(gs.getUser().isMemberOf(current.category.solver_group.name.toString())){
         <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-20 14:24:30</sys_created_on>
-        <sys_id>828e81d083531210b469b3a6feaad322</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_created_on>2025-01-20 20:43:37</sys_created_on>
+        <sys_id>8274ae9c83d71210b469b3a6feaad381</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>x_1593190_refoun_0_refound_request</sys_name>
         <sys_package display_value="Refound System" source="x_1593190_refoun_0">b86c091083531210b469b3a6feaad353</sys_package>
         <sys_policy/>
         <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
-        <sys_update_name>sys_security_acl_828e81d083531210b469b3a6feaad322</sys_update_name>
+        <sys_update_name>sys_security_acl_8274ae9c83d71210b469b3a6feaad381</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-21 16:47:24</sys_updated_on>
+        <sys_updated_on>2025-01-21 16:46:03</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>828e81d083531210b469b3a6feaad322</id>
+        <id>8274ae9c83d71210b469b3a6feaad381</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-20 19:58:40</sys_created_on>
-        <sys_id>4d0b5e1083d71210b469b3a6feaad3fd</sys_id>
+        <sys_created_on>2025-01-20 20:43:33</sys_created_on>
+        <sys_id>ba452610831b1210b469b3a6feaad389</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-20 19:58:40</sys_updated_on>
+        <sys_updated_on>2025-01-20 20:43:33</sys_updated_on>
         <table>sys_security_acl</table>
         <use_es_latest>true</use_es_latest>
     </sys_es_latest_script>
