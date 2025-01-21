@@ -1,0 +1,2210 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=7876000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>currency_integration</internal_name>
+        <label_cache>[{"name":"f402ddf1-a532-4436-b9b2-28f29fae3e90.__action_status__.code","label":"6 - Free Currency Integration➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"cfd1ba13-7c6e-403c-a927-14ba8e0f253b":["condition"]},"attributes":{}},{"name":"subflow.refound_request_record","label":"Input➛Refound Request Record","reference":"x_1593190_refoun_0_refound_request","reference_display":"Refound Request","type":"reference","base_type":"reference","column_name":"","usedInstances":{"c359ec3d-e7af-48fa-98d1-68c5edf87b5f":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"865ccb2d-611a-48ba-b433-db3291327a56","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"f402ddf1-a532-4436-b9b2-28f29fae3e90.__action_status__","label":"6 - Free Currency Integration➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{},"attributes":{"uiTypeLabel":"Object","co_type_name":"FD6d3ac8b0fbd3921059d0f218a1c2b1c0","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"3601a9d5-16d1-4e14-a6f3-52074f05e7ce"}},{"name":"flow_variable.retry_count","label":"Flow Variables➛Retry Count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"c17842de-59fc-4bc6-82b7-063f3c85482d":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f236dc03-9888-4b12-bb7a-112b4602692d"}},{"name":"flow_variable.current_try","label":"Flow Variables➛Current Try","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"c17842de-59fc-4bc6-82b7-063f3c85482d":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"dfd29b96-19d9-4dd6-808c-ad638e6106f9"}},{"name":"flow_variable.integration_success","label":"Flow Variables➛Integration Success","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"c17842de-59fc-4bc6-82b7-063f3c85482d":["condition"],"4681d0c9-83f1-4d3e-a9d3-f6c95674b373":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"4cbc092f-af3e-492b-ac8e-3abbd85a4793"}},{"name":"flow_variable.active","label":"Flow Variables➛Active","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"fc4bc8fc-8c05-4c78-a6ec-e205f6a05077":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e65e52ec-1f57-49ba-9003-525e079a0b69"}}]</label_cache>
+        <master_snapshot>8780736083539210b469b3a6feaad380</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Currency Integration</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 20:46:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1c7febec83139210b469b3a6feaad3cc</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Currency Integration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Refound System" source="x_1593190_refoun_0">b86c091083531210b469b3a6feaad353</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name>sys_hub_flow_1c7febec83139210b469b3a6feaad3cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:19</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=1c7febec83139210b469b3a6feaad3cc"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1c7febec83139210b469b3a6feaad3cc"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=1c7febec83139210b469b3a6feaad3cc"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1c7febec83139210b469b3a6feaad3cc^sys_idNOT IN607febec83139210b469b3a6feaad3cf"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1c7febec83139210b469b3a6feaad3cc</id>
+        <name>Currency Integration</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 20:46:00</sys_created_on>
+        <sys_id>607febec83139210b469b3a6feaad3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 20:46:00</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=607febec83139210b469b3a6feaad3cf"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=1c7febec83139210b469b3a6feaad3cc^sys_idNOT IN69b8b7e883539210b469b3a6feaad3b4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=865ccb2d-611a-48ba-b433-db3291327a56</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1593190_refoun_0_refound_request</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>refound_request_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Refound Request Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</model>
+        <model_id>1c7febec83139210b469b3a6feaad3cc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1c7febec83139210b469b3a6feaad3cc</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1593190_refoun_0_refound_request">x_1593190_refoun_0_refound_request</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:26:30</sys_created_on>
+        <sys_id>69b8b7e883539210b469b3a6feaad3b4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:26:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=69b8b7e883539210b469b3a6feaad3b4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=1c7febec83139210b469b3a6feaad3cc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1c7febec83139210b469b3a6feaad3cc"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=1c7febec83139210b469b3a6feaad3cc"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=1c7febec83139210b469b3a6feaad3cc^sys_idNOT IN5a873f6883539210b469b3a6feaad35a,7faff32483939210b469b3a6feaad3cd"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Free Currency Integration">d045bfa483539210b469b3a6feaad3a1</action_type>
+        <action_type_parent display_value="Free Currency Integration">8d11ff6c83139210b469b3a6feaad3e6</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>d045bfa483539210b469b3a6feaad3a1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>c17842de-59fc-4bc6-82b7-063f3c85482d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:21:22</sys_created_on>
+        <sys_id>5a873f6883539210b469b3a6feaad35a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:13:29</sys_updated_on>
+        <ui_id>f402ddf1-a532-4436-b9b2-28f29fae3e90</ui_id>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>4681d0c9-83f1-4d3e-a9d3-f6c95674b373</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:57</sys_created_on>
+        <sys_id>7faff32483939210b469b3a6feaad3cd</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:58:53</sys_updated_on>
+        <ui_id>c359ec3d-e7af-48fa-98d1-68c5edf87b5f</ui_id>
+        <values>H4sIAAAAAAAA/+VWXU/bMBT9K1GeWqnLkhYQ7dtEVWkSA6lMvDBkOfENWHKc4I/Srup/33XshAoYKxIvaH2q7+c51/ckudnGnMWz+AhYmk2zk2KSTSbjNB2fHmX5ySTPxmxCAbJ4FEtaAUYqKGrF8LyiwjrDdqttXor6MVFQ1lYyouDBgjbEh+52GMy4bgTdXIcctBT3XDAFMp7d3I7ihiosb0DFs+0z16H4BM1BYOiyA/gcsNk07szqwlYgDeGd8TxkzoMn+j5HDyY5OFk6imFtQDJAICUVGkZxRSWjplabeGaURYMCyi6l2PQR91waT7Sia81/Y+ej1MWVgMyKMIT+SMKAvLmcU0OvsHJhrOrnVfMCtJ8Jg5JaYc72bT7gsjG8lj7F0Fx02bWwlbzwE4n7Anv3YTWCgMbxdMg9rfLqvn5cdiAXXLYjCRRFXVDRn6gxiufWODjbGAS0M65o03B5RxpVr3ibjFCq5E7gIXFLgz01v5MJLRzuBKdKkwXa5635miruSPzAMpi8G8V6o88E1fqJCs6QPFiHxBMLFEg7hXYEpN0El1wo3phv2GoFAfhuFBSQH7+1YcX0aaH2aj6pYE2y4+kkm6bEq4B0f3o5vFTB0gdEyz7gfaI4AHInip/tKrxOIejihe18Pze68I6giuMPU8XpZ1JFoPHpZfEvMaTjNx+3e5vU7r/eEwKrhaCK0ApX2xCNbc0vm6YTVrIvviWwl1I4MOt9+jiARaePBQfB9Cu0OnFAhXANEE/zmUCCM7oOzv7V8WEqyU7S9veJtPIfvEE8RW9zmF/ZYmd+Kwmb4w3JCHdZA8KmZnBhqxzUoGSk5RK+rgiXjTX6Lx9ZyX7PxNR49Ti0wXAYfY26Qm2VFVVJrgQprHI3shli8IKvgQ3GQySv6QpYf6e73e72D8BiepoiCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=1c7febec83139210b469b3a6feaad3cc"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=1c7febec83139210b469b3a6feaad3cc^sys_idNOT IN27aff32483939210b469b3a6feaad3c8,2baff32483939210b469b3a6feaad3c5,33aff32483939210b469b3a6feaad3cd,3faff32483939210b469b3a6feaad3c9,7baff32483939210b469b3a6feaad3ca,a7aff32483939210b469b3a6feaad3c4,abaff32483939210b469b3a6feaad3c6,af7bc43483d39210b469b3a6feaad355,b7aff32483939210b469b3a6feaad3cb,e7aff32483939210b469b3a6feaad3c7,f3aff32483939210b469b3a6feaad3cc"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2faff32483939210b469b3a6feaad3c7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>0a7f65e7-f8df-4caa-b6c7-12d90dbb77c5</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:57</sys_created_on>
+        <sys_id>27aff32483939210b469b3a6feaad3c8</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:15</sys_updated_on>
+        <ui_id>c17842de-59fc-4bc6-82b7-063f3c85482d</ui_id>
+        <values>H4sIAAAAAAAA/+1V22rbQBD9laJnIWSrjoPfQkqg0NaQhLy0qVjtjuylq111L3ZcoX/vjC62cWIaSqAv9ZP27FzOmZ2Dm8gEXwfv7s2Vc3Klo8XXxziSmjD8biLNKogWETdaSC+NzjsgjjZMBbrATyFdrdju4YDwtVTCwlCtZhZzPNho0Zxc+V0NuWIFKEy881bqFaZLgadCsCkv0vfzLM0mWZpeTKZ8Os9K/F2w+SzFuDHxeiT37lOHxGdZUz/E3djJWEG0JmkaR/DkQQvA3iVTDuKoYlowb+xuj1hgYqnVAVhL7XvJFXty8hcWn85mFFgCiuTDPPbHfJjVOCYjOSxrYtgjnhVqnKFRodJfeiE0ZShZUP5oysFhPaiJNLEYKJV3a7O9HRveSN0pHC6V4UztT8zjHIrgwdHLgIIKC+UVq2ucTl5bs5FdMnKpkpXCQ1Iqs8WmtCoJ40Q8wRmx5AbxDx38wKwkFZ+xDCa3nfr8Z6C+vY6Bcd6LxgDHraz9FZbbwECujZ+v3tHWNU1HZDP0SvAZYGVZ99QucA7Ote23kKaZ8DbA9+XtaQYP1hIJb3dDJO/jTwMtYEjOTdC+bZ9v+z9k8hYuE/NJdlmec9klf8llL/jrvLWmf7IWTeWVzkqp1n9rjdbCJ3R5751BW9f8ry33SP7qO7h+cQRw6ZDIPWEfxz8FutjhBkh+DG2N/UESDlj7GxfAbeVeBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">23aff32483939210b469b3a6feaad3c5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:57</sys_created_on>
+        <sys_id>2baff32483939210b469b3a6feaad3c5</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:15</sys_updated_on>
+        <ui_id>fc4bc8fc-8c05-4c78-a6ec-e205f6a05077</ui_id>
+        <values>H4sIAAAAAAAA/+2UW2vcMBCF/0rxszG+xEuzb6ElUGgbaEJe2mDG0nhXVJZcSfZma/zfO/Jld2k2NIQ89s060sycOfuxfaBb17TO3ukra8VGBevvD2EglNfouw8U1BisA6YVF05oVYxCGHQgW39Bn1zYRsL+/qiwrZDc4NytAUM1Dk2w7v+6cvsGCwklSiq8dUaoDZULTqcqhiq5ZAnL0lWWxnH6/iIpV1mZpDwDhIzeLYUfFnPvPo9K+KxrP490u0zShntbSRwG+OhQcaTRFUiLYVCD4uC02R8Ug8BvlDwKW6HctHENj1b8pt5pnvuHFdKObI7jcCzmqJaUtGB403iDk+KglEuEWra1+jrt4UPGClrpTkJuLfXDxpv2LmZL1e1W774tA6+FGhecL6VmIA8ncBRD2Tq0/odBiTU1KmpoGgqnaIzuxFhMXupoI+kQVVLvaKgnJQLmjUeUEUTXpH8c5Xswwm/xhdpQ8WSzBCtYMVJF7ZyhFYYxluJX6w1NC86rFFMa9MAyIxp3RXM6nF0P4VMkT2js+9FhN5sYPXY4DD/aOM742OEpsC8regumLyGv8iTOzzN9sTrH9Bmanwc5/QfIPvoXchzH8X+QT0EWtpiAnHebwHgtxw8e2mmCnbjhyIQlI3de+7T8A/uLPQEg2Km00+anX+GoDX8An021rssFAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3baff32483939210b469b3a6feaad3cc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>0a7f65e7-f8df-4caa-b6c7-12d90dbb77c5</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:57</sys_created_on>
+        <sys_id>33aff32483939210b469b3a6feaad3cd</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:16</sys_updated_on>
+        <ui_id>4681d0c9-83f1-4d3e-a9d3-f6c95674b373</ui_id>
+        <values>H4sIAAAAAAAA/+2Uy27bMBBFfyXgWhD0iIzGuyBFgABtA9RBNm0gjMiRTZQiVZKy4xr+9w71sI3G6QtddmfeIWfuHR14x0zn2867B3PtnFxqNv/0FDGpg0a/d0xDg2zOuNFCeml02QsRW4PqQuFOe1xaCKWLRcc5OkdVIV2rYPv400t8JZWwOM5swVJnj5bNdz+U/LbFUkGFinotvJV6Sc+loFOdQJ1e8ZTn2SzPkiR7c5lWs7xKM5EDQk73poc3U4SLd70SvZotzCPdTZOMFcFWmkQMnz1qgTS6BuUwYg1oAd7Y7UGxCOJeq6OwktpTOxYuPzv5jXpnRREu1kgZOQ7Fw7EctzfIfGUkx/s2GBwUD5Ua33CjukZ/GHKEvWMNnfLT3knpHPXDNpgOLkZL9WJlNh+ngbdS9wHHojIc1OEEntZQdR5d+DCosKFGZQNtS8spW2vWsn9MXpp4qegQ18psaGjgKQYejMe0I4hvSX/by49gZUjxntrQ48FmBU7ysmeP2nlLEfb9WsqvXTA0BByjlMM26ILjVrb+muascXS9j16Ce8Lsbtc7XI8mYnnEs3QDnvv95y5JctG7eMHznzf4F6xfQVEXaVKcZ/1ydo71M5S/Dnj2C8BDlt/kO0mS/4CfAi5dOYA6ZuuH/zXfTwHmYYIbuBHIpSMjD0G7m/6/Q2FLAEh+Km2M/RIiHLX9d3OxYjoJBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">37aff32483939210b469b3a6feaad3c9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>c17842de-59fc-4bc6-82b7-063f3c85482d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:57</sys_created_on>
+        <sys_id>3faff32483939210b469b3a6feaad3c9</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:15</sys_updated_on>
+        <ui_id>cfd1ba13-7c6e-403c-a927-14ba8e0f253b</ui_id>
+        <values>H4sIAAAAAAAA/+1UXW/aMBT9K12eIXISQIW3ahNSpW2V1qovW2Xd2DdgzdiZ7UAZ4r/vOgkUtXSbpj7uDZ/7dc7NPewS24S6Cf7OXnmvFiaZfX0YJMpEjH7vEgMrTGaJsEaqoKzhLTBI1qCbGLg2ARcOYuhiDko3Lkal8rWG7f1vk8RSaemwn1mDo84BXTLbPQuFbY1cQ4maet0Gp8yCypWkV8WgyqYiE0U+KXLG8stRVk6KMstlAQgF5R0K3x8kXHxskcGr2uI8wv1hknUy0srYIMHHgEYija5AexwkKzASgnXbI+IQ5I3RT8BSmUDtkpj86NVP6p2PxzGxQtIosAsen7zfXgeLpVUCb+pIsEMClLqvEVY3K/O50xH3jhU0Ohz2TkjjqR/WkXRk0VOqbpd28+UwcK5MK7APaitAH18QaA1lE9DHD4MaV9SIr6CuaTm8dnat2mLiskoXmh5ppe2GhsZ7SkFE4intCNI54R9a+B6ciio+URsq7miW4JXg7e1Ru+BIwr5dC//RREKdwF4K77ZBCV44VYcrmrPGnvV+8PJwT252t6tGLJeyyoYwLvLhaFRMhuW0zIf5ZZVPK8ACpyzlvCPPfYDQeM5TYSXu9+++NYwVkr2887dr/BbemMK4GmdsfN4bo8k5b5xxxeuGyP9giPgJ/9IPjLH/hjg1hPK8O+xeWzv8n/3wEI+/m+C7u5EolCcidxG7Pvzfx8CWDkCJU2hj3fco4Qnb/wI1DxJQOQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">73aff32483939210b469b3a6feaad3ca</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</flow>
+        <flow_variables_assigned>current_try</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>cfd1ba13-7c6e-403c-a927-14ba8e0f253b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:57</sys_created_on>
+        <sys_id>7baff32483939210b469b3a6feaad3ca</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:15</sys_updated_on>
+        <ui_id>77d99442-f772-4fae-aaba-65d56890cf80</ui_id>
+        <values>H4sIAAAAAAAA/+1V247aMBD9FeTXQhQ2KBDeVq1WQmq7Ukv3pVpFE3sCVh0769iwFPHvHecCaLvtF/CWOR7PnHM8oxyZ8a72rlmb+6aRG82WP5/HTOqA0feRaaiQLRn31qJ2ubMHNmY7UD6g9ClkUys4PF0QvpVKUHJXqgZLFRxatjy+OXKHGnMFBSq6uNION5RFzQWFc8jEfJ7GiyRLsrtpXMzSrEggLRFAJJxT3nDzY0dttG6pvcs3dCJQnnsYKwKjeMzw1aEWSD1LUA2OWQVagDN0b0AsgnjU6gJsqVCntYLXRv6m2rM45JVITXnvwznMe48Ge4zk+Fg7aXSHOCjU4J1RvtJfOw3BXSzBK3flrm+oHtaBcyDRMyq/b83+29DwQepWXn+oDAd1jsA5KwvvsAkv4uX6rTcd9Pmvd0GFVbC0grqWepPX1uxk24doV9FGURCVyuyJXxilCHjQGJGbED0Q/qmFn8DKIPgLlen7/dDyxeMqvLsoxV1WZOlkmolsMhMinSziBZ+ASJMFptM4LTN2as3NX3yQ1dnUG5J3nlJCw62s3T1R2JE8Zz0OWDuIV+NB4f+SqZXzVo9KkbdKWoU7sNFVjdGH0ZSdTqfnsBqdvG572ln+11Tetui2RbcteneLBHLZkOx10Lga/kbh4ECjKfk1tDf2Vyh3wU5/AD98nlzXBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">afaff32483939210b469b3a6feaad3c3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</flow>
+        <flow_variables_assigned>retry_count,retry_timeout,active,integration_success,current_try</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:57</sys_created_on>
+        <sys_id>a7aff32483939210b469b3a6feaad3c4</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:15</sys_updated_on>
+        <ui_id>f17b8a97-bf70-4e1a-87ef-d94b7306389e</ui_id>
+        <values>H4sIAAAAAAAA/+2a32+bSBDH/xWLp6tkfAvYmE2folaRIt1dT62vL9cK7Y/BWR0GuixJ3Mj/+83yw6Yk9UMUR03Ei8UOy853ZuejhZHvnLwyRWXKVX5elmqdOWf/fp06KrM2vL5zMrYB58zRYPQ2FnmVGWfqXLO0sla8lKosUrb9fLCIK5VKDe1SBdO4ggHtnN0NbpltAXHKOKT44GVmYI2z0LnEYRJSuVyGJApoQH2P8HlIecDCBBiTAfNxXvfkRytt8q6V9qBe6wmNau8j19IqIlMHbg1kEtBnwtISps6GZZKZXG/3Fg1MfsjSg+EKF2pi3bDbUn3HtefEzksAgxNtHvbDuM1Rl55cCfhQGJVnjcUwnna5y9Nqk/3VxGCzCwmrUtPLblXielBYzVZEqyj5dJXffOwcXqisDq+9meaCpfsRM0YrXhko7Y5UajXMTWP6496+QAob9BlvWFGobB0XOr9WtR+UvZmtUxzMkjS/QX22lGZM2BhnmE02u0D7+9r8mWllA/4Tl2n9/ZOpbxVc1vvuB6EUJHBpFEXunHu+y/mSuZ7nYwkQP6S+dHZ1cuNvlQ2rSVObkLjJKU4ohVaFOUcJ1xie0RV0Nht2vzxweGyynVvpbLIuZ2swf+scVZvtb1+c29hb0MCjJEYxuFJMZnUSNbNhxz0XX5zpJHjz1tntdtMBUUZtABF8FqaWR5niwT2mVntxP9E8cvVSuOIeWXggF66UPnIlkqXLPfwBJiIhBQ/mXvRkXHUFclKyWic1W4QM6WKNxwNW5D5X9cY9Gq4VxvL7RbtEwxc7ylfY4+u8kzeU2xLF8zwFlr1corrctub3D2f+VNAd0vcjdD/s2bNwB+ECFj4I10sWS3dOOXMpweNt4S+ALCkjPKRPwF1bPycCrlndklanfchaf2pZCQFl+czg+cfAE1EPvMuD1smnvdajgYxIvi4k54ILQv3EZUkAiKTPXTwEwQ0Y5zJasPmSBo9Asg6/R4WotLbT8azq0eDdp8F7sve7o+ePED0M3jXiJqta3IOKx3e7l/JuJxPpU05D16OSunMpQzcikXCZDIMIQo+EyWPOmKagv9rabbw3DYG61H72oT02BsYiHxsDj2wMPEjW2CAY+RobBE/YIBhQNjYKxq+SX+Gr5FU3CgbMjQ2DEc0XhOapGwYDOsbGwa9R/q//ne/UjQMJQpWoamUlXHb/KbA3tlg5SvRNN7n+z8ZzsO3+B4oOxcudIAAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a3aff32483939210b469b3a6feaad3c6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>fc4bc8fc-8c05-4c78-a6ec-e205f6a05077</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:57</sys_created_on>
+        <sys_id>abaff32483939210b469b3a6feaad3c6</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:15</sys_updated_on>
+        <ui_id>8dda0305-8a21-4b0f-ab80-1c7ed61d30ed</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">637bc43483d39210b469b3a6feaad355</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</flow>
+        <flow_variables_assigned>debug</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <parent_ui_id>4681d0c9-83f1-4d3e-a9d3-f6c95674b373</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 22:48:33</sys_created_on>
+        <sys_id>af7bc43483d39210b469b3a6feaad355</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:16</sys_updated_on>
+        <ui_id>67888591-faf3-4bb0-a75e-fb2772f1a7e6</ui_id>
+        <values>H4sIAAAAAAAA/+1VTYvbMBD9K0WnXUiME5t83RbCwkLbhW66l7KYsTVORGXJq49k05D/3pE/kpCFHnrOyZonaea9pxl8YNq72ju70g/WirVii19vAyZUwGh9YAoqZAvGMfdrNmBbkD7EtOTC1hL2r2ek2AjJDXZJajB016Fhi8PVltvXmEnIUdLFF2eECrkFp2gyneZFmqSzhCfz8SjO08k8T2BSIgBPEqRz/cVlx+mKYkhOoe3TasMDh3jA8MOh4khlSpAWB6wCxcFpsz8hBoE/K3kGNkK5Vl0FH1b8odSzOI7DyRJJUNFpP4VZ50tviRYFPtdOaNUiDnLZ+6Wlr9T3ln5wFEvw0l046i3lwzqwDjQ6TuXLRu9+9AUfhWoEdptSFyBPETiyIfcObXgFL1ZX5rTI1+unQIkVVcwqqGtCstrorWiqEOkqWksKolLqHbELbRNBERRG5CZEj4QvG/gVjAhyv1EauhzK/VTi3eNTeGqeIo6mkA7nk9l8mEJcDmejMQ7LMfKEzwrOR1N2bKzN3n0Q1ZrU2ZG1jtIBWxhRuweisCVxznjssSC67Qta/OsYFXHeqC8lzxoN1ueNvHYSIqKgveKZQSJvHX0LaqsIKkJdZomRi9bolhcjcXcfOd0aenfPjsfjW5ie1o92tJp+/9y/txG7jdhtxP53xDgWwpJPq2DKU/8fCxt7amJRXEI7bX4HCmfs+Bd6CXsREQcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bfaff32483939210b469b3a6feaad3ca</block>
+        <comment/>
+        <connected_to>cfd1ba13-7c6e-403c-a927-14ba8e0f253b</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>c17842de-59fc-4bc6-82b7-063f3c85482d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:57</sys_created_on>
+        <sys_id>b7aff32483939210b469b3a6feaad3cb</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:16</sys_updated_on>
+        <ui_id>56f8ab56-eb35-454b-b83e-fc3107a285e2</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">efaff32483939210b469b3a6feaad3c6</block>
+        <comment/>
+        <connected_to>fc4bc8fc-8c05-4c78-a6ec-e205f6a05077</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:57</sys_created_on>
+        <sys_id>e7aff32483939210b469b3a6feaad3c7</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:15</sys_updated_on>
+        <ui_id>0a7f65e7-f8df-4caa-b6c7-12d90dbb77c5</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">fbaff32483939210b469b3a6feaad3cb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</flow>
+        <flow_variables_assigned>integration_success,brl_currency</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id>56f8ab56-eb35-454b-b83e-fc3107a285e2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:57</sys_created_on>
+        <sys_id>f3aff32483939210b469b3a6feaad3cc</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:16</sys_updated_on>
+        <ui_id>f1a708a2-0fd1-4258-8cab-196523591091</ui_id>
+        <values>H4sIAAAAAAAA/+1XW0/bMBT+K1WeNqnp0iS9hDc2hITEYIKOlwlFjn3SWnPsYDtAV/W/7ziXtjDGJKQhNvWp8Xfsc/n8HR915anKlpU1M3VoDJ9L7+Dbdd/j0mH4vfIkKcA7QMTCXBPLlUxNRSkY4/W9WyIqZx3iN+OmFGR51UJW40/fowsumIbWb0k0urOgvYPVI5NdlpAKkoHAwzM8/OGYCONccIbIJEzYZDIOplESJeEwyOJxkkVknAMhLKJT3NcdPtmm2rvcpPpsHS44GjOlBBCJgNLMJRn0Pbi3IBlgDrnLp+8VRDJilV5uEA2EnUuxBRYYBd15bvO94T/Qdxy4fTlgvRQa22aZttQ1MF0oTuG8dCk2iCWZaM9QJapCnjW1ONIhJ5WwHel5S1kLHz28ks5aGQwJpSvL5dkmnV8u1N1Fl9MxlzUDrVEoSsRmRazVPKssGHePFZ89pq+BTp+6TRBQYNi0IGXJ5TwttbrldSgsrhjMBS4GuVB3mKIT5IBQx8QAOSeDY8SPaviKaO5o+Yxu8LAL+VXymwpOnFpimtEgCXOf5BH4cRJmPqFT8COSZWw6IvEkibx1fQXpTeUqa8hsOUkb5nGDoZqX9hBTuIW2/HV/0xSZFimttCNsudMNvzbDixsBC0atynnvi0JN9c6qIqurrXsCeyGfRGH8dE/EwU5PfLw47X3aZvp0/m0X5C7mv9sDf1HgHTMP5f27O3oVpbOA4bUPJz5NMlT6KGQ+AQj9UTwK4uEwSiDJX6B093p3mKPggVJw/dxujGUrLXuocQM1Oe9yltZVpeM0zTXAxle68x4PWpCDGaBe33vr9fradVVTfzOOauH/6Tnfj6W31ZL7sfQ6Y+lRc+zH0xvshf14+r/GEwPKDZpnjoST7n+TMyxRxpzuQndKf3eMbrH1T0Zr6USBDQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=1c7febec83139210b469b3a6feaad3cc"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=1c7febec83139210b469b3a6feaad3cc^sys_idNOT IN677bc43483d39210b469b3a6feaad33e,729d776083939210b469b3a6feaad3c8,769d776083939210b469b3a6feaad3b3,7a9d776083939210b469b3a6feaad3b6,7a9d776083939210b469b3a6feaad3cc,839f732483939210b469b3a6feaad340,f69d776083939210b469b3a6feaad3a2"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d4ee17a4-9689-4a0f-812e-f2ed3d8cdd17</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>debug</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Debug</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</model>
+        <model_id>1c7febec83139210b469b3a6feaad3cc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_1c7febec83139210b469b3a6feaad3cc</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 22:48:33</sys_created_on>
+        <sys_id>677bc43483d39210b469b3a6feaad33e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:48:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=4cbc092f-af3e-492b-ac8e-3abbd85a4793</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_success</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Integration Success</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</model>
+        <model_id>1c7febec83139210b469b3a6feaad3cc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_1c7febec83139210b469b3a6feaad3cc</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:47:53</sys_created_on>
+        <sys_id>729d776083939210b469b3a6feaad3c8</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 23:05:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b1051ed5-dd28-4cf7-b1f7-eac8cdcb3418</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Timeout</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</model>
+        <model_id>1c7febec83139210b469b3a6feaad3cc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_1c7febec83139210b469b3a6feaad3cc</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:47:53</sys_created_on>
+        <sys_id>769d776083939210b469b3a6feaad3b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:47:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=e65e52ec-1f57-49ba-9003-525e079a0b69</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>active</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Active</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</model>
+        <model_id>1c7febec83139210b469b3a6feaad3cc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_1c7febec83139210b469b3a6feaad3cc</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:47:53</sys_created_on>
+        <sys_id>7a9d776083939210b469b3a6feaad3b6</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 23:05:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=dfd29b96-19d9-4dd6-808c-ad638e6106f9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current_try</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Current Try</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</model>
+        <model_id>1c7febec83139210b469b3a6feaad3cc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_1c7febec83139210b469b3a6feaad3cc</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:47:53</sys_created_on>
+        <sys_id>7a9d776083939210b469b3a6feaad3cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:47:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=float,uiTypeLabel=Floating Point Number,uiUniqueId=d0db4617-c9be-452d-aee2-545041139e9f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>brl_currency</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">float</internal_type>
+        <label>BRL Currency</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</model>
+        <model_id>1c7febec83139210b469b3a6feaad3cc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_1c7febec83139210b469b3a6feaad3cc</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:38</sys_created_on>
+        <sys_id>839f732483939210b469b3a6feaad340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:56:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=f236dc03-9888-4b12-bb7a-112b4602692d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</model>
+        <model_id>1c7febec83139210b469b3a6feaad3cc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_1c7febec83139210b469b3a6feaad3cc</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:47:53</sys_created_on>
+        <sys_id>f69d776083939210b469b3a6feaad3a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:47:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1c7febec83139210b469b3a6feaad3cc^sys_idNOT INadb8b7e883539210b469b3a6feaad3b8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>refound_request_record</element>
+        <help/>
+        <hint/>
+        <label>Refound Request Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1c7febec83139210b469b3a6feaad3cc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:26:30</sys_created_on>
+        <sys_id>adb8b7e883539210b469b3a6feaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refound System" source="x_1593190_refoun_0">b86c091083531210b469b3a6feaad353</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:26:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1c7febec83139210b469b3a6feaad3cc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_1c7febec83139210b469b3a6feaad3cc"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1c7febec83139210b469b3a6feaad3cc"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>currency_integration</internal_name>
+        <label_cache>[{"name":"f402ddf1-a532-4436-b9b2-28f29fae3e90.__action_status__.code","label":"6 - Free Currency Integration➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"cfd1ba13-7c6e-403c-a927-14ba8e0f253b":["condition"]},"attributes":{}},{"name":"subflow.refound_request_record","label":"Input➛Refound Request Record","reference":"x_1593190_refoun_0_refound_request","reference_display":"Refound Request","type":"reference","base_type":"reference","column_name":"","usedInstances":{"c359ec3d-e7af-48fa-98d1-68c5edf87b5f":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"865ccb2d-611a-48ba-b433-db3291327a56","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"f402ddf1-a532-4436-b9b2-28f29fae3e90.__action_status__","label":"6 - Free Currency Integration➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{},"attributes":{"uiTypeLabel":"Object","co_type_name":"FD6d3ac8b0fbd3921059d0f218a1c2b1c0","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"3601a9d5-16d1-4e14-a6f3-52074f05e7ce"}},{"name":"flow_variable.retry_count","label":"Flow Variables➛Retry Count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"c17842de-59fc-4bc6-82b7-063f3c85482d":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f236dc03-9888-4b12-bb7a-112b4602692d"}},{"name":"flow_variable.current_try","label":"Flow Variables➛Current Try","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"c17842de-59fc-4bc6-82b7-063f3c85482d":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"dfd29b96-19d9-4dd6-808c-ad638e6106f9"}},{"name":"flow_variable.integration_success","label":"Flow Variables➛Integration Success","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"c17842de-59fc-4bc6-82b7-063f3c85482d":["condition"],"4681d0c9-83f1-4d3e-a9d3-f6c95674b373":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"4cbc092f-af3e-492b-ac8e-3abbd85a4793"}},{"name":"flow_variable.active","label":"Flow Variables➛Active","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"fc4bc8fc-8c05-4c78-a6ec-e205f6a05077":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e65e52ec-1f57-49ba-9003-525e079a0b69"}}]</label_cache>
+        <master>true</master>
+        <name>Currency Integration</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 20:50:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8780736083539210b469b3a6feaad380</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:18</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=8780736083539210b469b3a6feaad380"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8780736083539210b469b3a6feaad380"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=8780736083539210b469b3a6feaad380"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8780736083539210b469b3a6feaad380^sys_idNOT IN4b80736083539210b469b3a6feaad381"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>8780736083539210b469b3a6feaad380</id>
+        <name>Currency Integration</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 20:50:50</sys_created_on>
+        <sys_id>4b80736083539210b469b3a6feaad381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 20:50:50</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4b80736083539210b469b3a6feaad381"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=8780736083539210b469b3a6feaad380^sys_idNOT IN35b8b7e883539210b469b3a6feaad3fe"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=865ccb2d-611a-48ba-b433-db3291327a56</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1593190_refoun_0_refound_request</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>refound_request_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Refound Request Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Currency Integration">8780736083539210b469b3a6feaad380</model>
+        <model_id>8780736083539210b469b3a6feaad380</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_8780736083539210b469b3a6feaad380</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1593190_refoun_0_refound_request">x_1593190_refoun_0_refound_request</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:26:31</sys_created_on>
+        <sys_id>35b8b7e883539210b469b3a6feaad3fe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:26:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=35b8b7e883539210b469b3a6feaad3fe"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=8780736083539210b469b3a6feaad380"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8780736083539210b469b3a6feaad380"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8780736083539210b469b3a6feaad380"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8780736083539210b469b3a6feaad380^sys_idNOT IN08bf372483939210b469b3a6feaad364,2e873f6883539210b469b3a6feaad3a3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Currency Integration">8780736083539210b469b3a6feaad380</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>4681d0c9-83f1-4d3e-a9d3-f6c95674b373</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>08bf372483939210b469b3a6feaad364</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:42:57</sys_updated_on>
+        <ui_id>c359ec3d-e7af-48fa-98d1-68c5edf87b5f</ui_id>
+        <values>H4sIAAAAAAAA/+VWXU/bMBT9K1GeWqnLkhYQ7dtEVWkSA6lMvDBkOfENWHKc4I/Srup/33XshAoYKxIvaH2q7+c51/ckudnGnMWz+AhYmk2zk2KSTSbjNB2fHmX5ySTPxmxCAbJ4FEtaAUYqKGrF8LyiwjrDdqttXor6MVFQ1lYyouDBgjbEh+52GMy4bgTdXIcctBT3XDAFMp7d3I7ihiosb0DFs+0z16H4BM1BYOiyA/gcsNk07szqwlYgDeGd8TxkzoMn+j5HDyY5OFk6imFtQDJAICUVGkZxRSWjplabeGaURYMCyi6l2PQR91waT7Sia81/Y+ej1MWVgMyKMIT+SMKAvLmcU0OvsHJhrOrnVfMCtJ8Jg5JaYc72bT7gsjG8lj7F0Fx02bWwlbzwE4n7Anv3YTWCgMbxdMg9rfLqvn5cdiAXXLYjCRRFXVDRn6gxiufWODjbGAS0M65o03B5RxpVr3ibjFCq5E7gIXFLgz01v5MJLRzuBKdKkwXa5635miruSPzAMpi8G8V6o88E1fqJCs6QPFiHxBMLFEg7hXYEpN0El1wo3phv2GoFAfhuFBSQH7+1YcX0aaH2aj6pYE2y4+kkm6bEq4B0f3o5vFTB0gdEyz7gfaI4AHInip/tKrxOIejihe18Pze68I6giuMPU8XpZ1JFoPHpZfEvMaTjNx+3e5vU7r/eEwKrhaCK0ApX2xCNbc0vm6YTVrIvviWwl1I4MOt9+jiARaePBQfB9Cu0OnFAhXANEE/zmUCCM7oOzv7V8WEqyU7S9veJtPIfvEE8RW9zmF/ZYmd+Kwmb4w3JCHdZA8KmZnBhqxzUoGSk5RK+rgiXjTX6Lx9ZyX7PxNR49Ti0wXAYfY26Qm2VFVVJrgQprHI3shli8IKvgQ3GQySv6QpYf6e73e72D8BiepoiCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Free Currency Integration">d045bfa483539210b469b3a6feaad3a1</action_type>
+        <action_type_parent display_value="Free Currency Integration">8d11ff6c83139210b469b3a6feaad3e6</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>d045bfa483539210b469b3a6feaad3a1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Currency Integration">8780736083539210b469b3a6feaad380</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>c17842de-59fc-4bc6-82b7-063f3c85482d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:21:23</sys_created_on>
+        <sys_id>2e873f6883539210b469b3a6feaad3a3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:56:59</sys_updated_on>
+        <ui_id>f402ddf1-a532-4436-b9b2-28f29fae3e90</ui_id>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8780736083539210b469b3a6feaad380"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8780736083539210b469b3a6feaad380^sys_idNOT IN00bf372483939210b469b3a6feaad366,04bf372483939210b469b3a6feaad367,08bf372483939210b469b3a6feaad368,08bf372483939210b469b3a6feaad36e,408b083483d39210b469b3a6feaad344,48bf372483939210b469b3a6feaad36d,84bf372483939210b469b3a6feaad36a,88bf372483939210b469b3a6feaad36c,c4bf372483939210b469b3a6feaad369,c4bf372483939210b469b3a6feaad36f,c8bf372483939210b469b3a6feaad36b"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">afaff32483939210b469b3a6feaad3c3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">8780736083539210b469b3a6feaad380</flow>
+        <flow_variables_assigned>retry_count,retry_timeout,active,integration_success,current_try</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>00bf372483939210b469b3a6feaad366</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:18</sys_updated_on>
+        <ui_id>f17b8a97-bf70-4e1a-87ef-d94b7306389e</ui_id>
+        <values>H4sIAAAAAAAA/+2abW/bNhDHv4qhVytgeZRky2L2KkgQIMC2Do3XN20hHB/kEJMllaKSeIG/+46SbKtJbGBAPLQL3xjW8eH+d8cfKB/86JWNqRpTL8rzulbLwjv79GXsqcLa8Pujp4R35nljr4CVxG9aGr1OedkUBo13kDeyGxeqrnJYf9xb+K3KhZb9lhVo3MFI7Z09PhlqXWQxFfN5TJKIRjQMCJvGlEUQZxJARBDihjkwmePUD1bD6KLX8KIws66sURVGLtFlZ/i1X3+9s5ZaWEFk7MkHIwshUUkGeS3H3goKAabU651FSxDvi3xvuMXtu1BX8FCrv9HjlNh5mcTYeJ+G3WPap6gzZ5dg4MbohptG7zJWKi7rLitCZtDk5mJo6ya8r4wqi26JAZZvV5d5syp+79Lh7TYYVKSpUYSsbKBWeR9GdnNb3n/YqrxSRZuTfjAvOeS7JzBGK9YYq+fRa9TiaZo70/NEy1yu0Ge6gqpSxTKtdHmnWj8oezVZ5vgwyfLyHvXZYzgBbmOcYAlgcoX2y9b8EbSyAf+G2/T+/izU10Zet0cojGLBSeTTJEn8KQtCn7E5+EEQ4mkiYUxD4W3GXr2uL3Ko632qsEbp18YG2iWuT1HaZdku4VpV5hxF3eESrJrc2mwihmcPH49NtnMbXYyW9WQpzR+6xDjM+qfP3kMazGgUUJKiGNwpJZM2rRpsItKBi8/eeBS9+8XbbDbjA3watZII9usSOj9KKIueEbrYqTggzlH6BillAZkFUsx8IUKklGdznwX4IYEnXHAWTYPkhJRuT99JOe2dtKQScohV6DzvISXPKW1L+u9RhaOoxgNUz7cinorq4WRlmUsonsC5wGT9fNVre0t8buvRmy9frtapEN4X41uEvynHf0KxjGdyFkruB9ls7k8pA58SvHpn4UySOQXCYnoSivvzeSJ8u90tt20hDpE7XFI3HE9WfRKMw2MY82SA8fVe0ehmp+ioXAe4A/ww4FPOOKFh5kMWSQQ8ZD5e0NKPgDGRzGA6p9GrAN4m5AXGeKO1XYb36YCt4DlbwStfj5wPuLroVIwWrYoXpbm32Df4FisyEVJGYz+ggvpTIWI/IQn3QcRRIuOAxNnr3H8dHl8sAZ0e15ZxqPxQqLi2jGvLOEq/d0pdW8a1ZX5cPt2vNteWcW0ZB/j/HnDXlnFtGfcW+x21ZYTkqkadCyvqevu/GTuwxmOp+NB0X+q/bIR72+Yf2u2ekIEjAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">23aff32483939210b469b3a6feaad3c5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">8780736083539210b469b3a6feaad380</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>04bf372483939210b469b3a6feaad367</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:18</sys_updated_on>
+        <ui_id>fc4bc8fc-8c05-4c78-a6ec-e205f6a05077</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPJvijCWveSkph0K2wlr5sxVzLciImS54+kmYm/31XluyENWMt2+PerCPdq3OO7sE9Uc52zpoHdWUMX0uy/PKUEC49ht89kdAysiRUyZpbrmQ5AAnZgnB+Az9rbjoB+8cjQjdc1JrFbh1orLFMk2X/yxavsaBJockuaUaLfFHkaZq/v8iqRVFleV0AgwIbCqiYwKOrkca72wFJfsvP7juPG6u5XMf1bexyP4JK155VliaEPVsma4Z8GhCGJaQFWYNVej8hmkF9J8UR2HBpg+AWng3/gRfm87k/2DCUSKMb07KMTgW4uQYLSMVR6/RknOKUmWBOzRpwwq5OsXDgrvNSQ4mFSozVSrhWfgqOkKnBycM4gyRY55V66lFHc79Ru88jyxsuB1fiplAUxLQCi95Vzno+PWGCtdiobKHr0NGy02rLh2Lk0s7WAhezRqgdXuqnawbUE5+hsTC7Qfx6gB9Bc6/iI7bB4kCzAsNpOUwitkObGDkkxOzNSoAxR5HobvndeYpBchRXBn98CdW8s1d485ZFHYfk5WCfzHTfD5y3kdbAessOh68uTYt66PBy7F9X9LZkXMK8mWfp/HwyLhbnknEmE2+MQ/6HOPi3eGUa0jT9H4e/jgM3ZRjiqC0M079Lw5Mf/XDn5DXlBqk9eOzD+DfwG3scLk5PoZ3S37yoI3b4CQ0MJI1XBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a3aff32483939210b469b3a6feaad3c6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">8780736083539210b469b3a6feaad380</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>fc4bc8fc-8c05-4c78-a6ec-e205f6a05077</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>08bf372483939210b469b3a6feaad368</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:18</sys_updated_on>
+        <ui_id>8dda0305-8a21-4b0f-ab80-1c7ed61d30ed</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">fbaff32483939210b469b3a6feaad3cb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">8780736083539210b469b3a6feaad380</flow>
+        <flow_variables_assigned>integration_success,brl_currency</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id>56f8ab56-eb35-454b-b83e-fc3107a285e2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>08bf372483939210b469b3a6feaad36e</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:18</sys_updated_on>
+        <ui_id>f1a708a2-0fd1-4258-8cab-196523591091</ui_id>
+        <values>H4sIAAAAAAAA/+1Xy27bMBD8FYOnFrBd2ZIfyi1NYCBAmhSNm0sRCCtyZROlRIWkkriG/71LS37k0aAF2l7ik8VZcjk7y8HCS6YrV1bOTvWxtXJWsKNvN20mC4/R95JJwY4Ya7MCcqQvWTicGXBSF4mtOEdrKXgHqvLRHn0LaUsFi+sGcoZ+2ozPpRIGm/wlGErn0LCj5ZPQ+r5RPxaj0TAYh3EY93tBGg3jNIRhhgAi5GNKqCBFRVvPdoRaV1tCr7J1i9IHU60VQtEA502+KfH9MAFlPWtthOcYtBk+OCwEErnMx9osh0KA02axRQyCuCzUDpjT9bV4OTxY+YMujQK/L0Mql2Md2y6TRrkazk7BwRWpx11lmq18riXVUAslMINKuZN9rN5wWfqC6yMOUrU5rVWVFxe1MmybYNOorKm5gU8ft3ETrSzxxNJr4YtrKs2u5vr+y6aQiSzWsjVBpTmo7QqcMzKtnKe8ZJWcPm1GDb3YDlSY07VJDmUpi1lSGn0n11dRcXl3pmjRzZS+J4r+MXeBeyW61CjoTgg/XcPXYKSX5ROlocP+yq+FvK3wzL+9iKc8iPtZB7IQO1HcTzvAx9gJIU3FeADRKA7Zqs3swp4osHYnKHUyua18rbW8jUpJ3Qt/hBtZumMidYeNIKv2M4ulRiW8Ml7KxZ63nlvrj21FdspGYT962VZRsGerj1/OWyc7Ei9Ta4xEioN7YqOJx6hHrc+aXNC6qPJ0LfVbctQ/tMtG8sdm+ZXo/8U3IhD0nnqjDo9T8s2gLzqA2O8MokEQ9XphjHH2V3zjJ8oG86I8epS0fm033UXNL1rkFItrud5lIlnXmQyTJDOI21zJ3vToNqBE2yVrvGer1erGe7NW5DAq35SxD6PyMCoPo/IwKg+j8vdHpUAuLYWnXpazzf9LH1iQYyTfh+61+e413mGrnyiDhwepDgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">637bc43483d39210b469b3a6feaad355</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">8780736083539210b469b3a6feaad380</flow>
+        <flow_variables_assigned>debug</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <parent_ui_id>4681d0c9-83f1-4d3e-a9d3-f6c95674b373</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 22:48:35</sys_created_on>
+        <sys_id>408b083483d39210b469b3a6feaad344</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:18</sys_updated_on>
+        <ui_id>67888591-faf3-4bb0-a75e-fb2772f1a7e6</ui_id>
+        <values>H4sIAAAAAAAA/+1VTWvjMBD9K4tOLSQmiU2+bqWhUNjdwrbbSylmbI0TsbLk6iNpNuS/7yiyk5CFPe8hJ2ueNDPvPWnwjmnvGu/si76zViwVm7+995hQAaP1jgnO5oz1mIIaacWx8EsK1yA9xh0ubCNh+3pCypWQ3GBbrAFDuQ4Nm+8utg7Fx5NJUWZpNk15OhsNB0U2nhUpjCsE4GmKVFBCgZKOLtruF2TctgmhdUaoLv7apjx3oDY8UBj0GH46VBypdwXSYo/VoDg4bbZHxCDwJyVPwEooF8XV8GnFb+o3HQwG4WSFpKdspR/DvLUlwtUCHBAVXzpvji5pUaKNTnCswEt3f47FA0+NE1rFFAeF7LK19LX6Ho1gxwJnt+AtkcAmSA3cWyHV80pvfnQsH4Q6uNJuSl2CPEbgyLvCu8Bnx7x4ubA5In8ZjRJr6pjX0DSE5I3Ra3HoQqTrZCkpSCqpN8QuPLkEyqAwoSuA5IHwxQF+BSOC3G9UhpJDu59KfHh8DI+GZ4jDCWT92Xg662cwqPrT4Qj71Qh5yqcl58MJ2/eY3dp7CdaejKIbyj98kBltaw3Ko8chpTSicXdEak0pdGfYYcGG+OZo8a9j1ITuWX2peH5QZX1xEBznKiEK2iueGyQ51tG3pNeZQE2oyy0xcskS3eJssG5uE6ejxTe3bL/fv4cZjA5dB/U6qNdB/Y8HlWMpLDn3Emx67P6tYWNLAyLKc2ijza9A4YTt/wCYFAsBpQcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bfaff32483939210b469b3a6feaad3ca</block>
+        <comment/>
+        <connected_to>cfd1ba13-7c6e-403c-a927-14ba8e0f253b</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">8780736083539210b469b3a6feaad380</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>c17842de-59fc-4bc6-82b7-063f3c85482d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>48bf372483939210b469b3a6feaad36d</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:18</sys_updated_on>
+        <ui_id>56f8ab56-eb35-454b-b83e-fc3107a285e2</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2faff32483939210b469b3a6feaad3c7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">8780736083539210b469b3a6feaad380</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>0a7f65e7-f8df-4caa-b6c7-12d90dbb77c5</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>84bf372483939210b469b3a6feaad36a</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:18</sys_updated_on>
+        <ui_id>c17842de-59fc-4bc6-82b7-063f3c85482d</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPxjjx0pS+lZTCoFugLX3ZOnMjyYmYLHn6SOoZ//dd2YoT0patbLCX5ck6uh/nHt1DWqK9q72z9/rSWrFW5OLzY0KEChh+t0RBxckFoVox4YRWRQ8kZAvShwv8ZMLWEpqHA0I3QjLDY7UaDOY4bshFe3IlGCasGEzpKns/z7N8kmfZ2WRKp/O8xN8ZzGcZFpSw4hJDF3sa7256JHmVn2vqgFtnhFrH802scrcHtWGB1STLEsKfHFeMI6ESpOUJqUAxcNo0I2I4sKWSB2AjlBsmruDJih/YcTqbhcCS44w0yjEeiyjVAJdX4AC5eOq8GZXTgnI7qMN4CV66xTE2BCzrMOuQ4mAl99la+kp9GiQhY4Gjl/EWSfA6TBqoxznKu43e3e5ZXgvVyxIvpaYgxxM4FG/lXeDTEi55hYWKCuoaJS1qo7eiT0YuVbqWeEhLqXfYNKxXCjQQT1FYSK8Rv+rhBzAiTPERy2BylxDb2IUEaw+zoIjFdx+YDJPFGYpBhpBCjajdJTbY8ki3S54v8NHutm1PbRu7p/iafG2gXyPrKWpuu+6Lz7Kc4Svxr8vb0wzqjQkknGliJB3iTwMNx5CCaq9c1z33zD9k8javsvkkPy9f8+o5fcmrL7j0jQad/sqgQZTf9GcWav036B8ZFJfBFoPf4mx9879o3Mfg0qHnqDUVFqndB+zD/g8qXDS4XYIeQzttvoWhDlj3E3HoNfDqBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">73aff32483939210b469b3a6feaad3ca</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">8780736083539210b469b3a6feaad380</flow>
+        <flow_variables_assigned>current_try</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>cfd1ba13-7c6e-403c-a927-14ba8e0f253b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>88bf372483939210b469b3a6feaad36c</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:18</sys_updated_on>
+        <ui_id>77d99442-f772-4fae-aaba-65d56890cf80</ui_id>
+        <values>H4sIAAAAAAAA/+1VTY/aMBD9K8jXQhQWFAi3FauVkNqu1KV7qVbRxHbAqmNn/QFLEf+94zgBtK167YVb/Dwf773xKEeivWu8s2t9b63YKLL48TokQgUMv49EMLIgZEgU1By/qDeGK1c4c0BwB9LzeM+EbSQcXi4I3QrJMDiWbMBgBccNWRw/XLUtZpCz2SxL55N8kt+N03Ka5eUEsooDsAmlWFBCySWGLiOHwbrl8Fdi7tAEUCjHN9gyAp+7/NUZ1YYFQumQ8HfHFePIpAJp+ZDUoBg4jdV6xHBgT0pegC2Wj1JreLfiF3acpiGu4kiFdjacj0VnUYSrB3Dw7IynzpuzY1pQbqMrjFfgpVteYzHgqXFCq5jioJR9tpa+Vl+jHeRc4Goi3iIJ3gShgXkno3re6v23nuWjUK0n3aXUFOT5BM4ZUXoX+ByJF+uPNkfoT6O55HWYTg1NI9SmaIzeibYP0q6TjcRDUkm9R37hGSZAg8YERwDJI+IPLfwCRgTBX7BM1++7Em+er8ITYhW7y8s8G41zlo+mjGWjeTqnI2DZZM6zcZpVOTkNiT3YpQRrL1bhjIo3H4RG4zqLiuhySKFGNO4eSe0wBafGe6x9zldvD4//CsZWOG81qFjRams178AkVzUGnwZjcjqdXsOCRcG3Xbzt4m0X/+8uMk6FRSPWQfWq/0OGiwO+e0Gvob02P0O5C3b6DV8dEZRrBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">efaff32483939210b469b3a6feaad3c6</block>
+        <comment/>
+        <connected_to>fc4bc8fc-8c05-4c78-a6ec-e205f6a05077</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">8780736083539210b469b3a6feaad380</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>c4bf372483939210b469b3a6feaad369</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:18</sys_updated_on>
+        <ui_id>0a7f65e7-f8df-4caa-b6c7-12d90dbb77c5</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3baff32483939210b469b3a6feaad3cc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">8780736083539210b469b3a6feaad380</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>0a7f65e7-f8df-4caa-b6c7-12d90dbb77c5</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>c4bf372483939210b469b3a6feaad36f</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:18</sys_updated_on>
+        <ui_id>4681d0c9-83f1-4d3e-a9d3-f6c95674b373</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnQdAjNhrfAgcBAiQNUAe5tIGwoiibCEWqfNhxBf97l6JkG437MNpjb+YsuTsz2oE7opxtnTVP6toYvpRk9vklIlx6DH93RELDyIxQJStuuZJFD0RkDcL5wp20bKnBly4WjlJmDFYrbloB2+dfXqIrLirNhpktaOxsmSaz7ocSr7BHnUCdXtGU5tk0z5Ik+3CZltO8TLMqBwY5NhRQMoFX5yPZi/seiX6qwm5bjxuruVwO5/uhy2IEla48qzSJCHuzTFYM+dQgDItIA7ICq/R2j2gG1aMUB2DFpcV2xF9+M/wbDswmE3+xZiiRslDcH4vBvADXN2ABqThqnR6u0pXi6GEwp2I1OGHnx1i48Nh6qeGJhVKMr5VwjfwYHCH7BuO3QsQZJMFar9RTH3TUi5XafBpZ3nLZuzIUhaIg9iew6F3prOfTESZYg42KBtoWHS1arda8f4xcmngp8BDXQm1wqN/BGKgnHqOxEN8iftPDz6C5V/GAbfBxoFmC4bTo9xXboU2M7CJitmYuwJiDSHS3+Oo8xSB5EFcEf/wTqnlrr3Hymg06dtH79T/a/K7rOa8HWjE/LHlhwpLvdl9ckuRVz+tdKs5vcF5irmBST9Jkcjoxl9NTiTmRlTNjkv0mJl7KH6YkSZL/MfnrmHBThOUetPXD/2FKXnwkwsy915QbpPbksbvxv8QXtrhcnB5DG6VfvagDtvsOfmFQcpUGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">37aff32483939210b469b3a6feaad3c9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Currency Integration">8780736083539210b469b3a6feaad380</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>c17842de-59fc-4bc6-82b7-063f3c85482d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>c8bf372483939210b469b3a6feaad36b</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:18</sys_updated_on>
+        <ui_id>cfd1ba13-7c6e-403c-a927-14ba8e0f253b</ui_id>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K8zPaeQkbUV5Q0WVkNiQBuJlQ9aNP1prrp3ZDtBV/e+7TtKCgH2g8bi3+tzre8858VG3xLWxaWO4dqch6KUlJ19uM6JtwvD3llhYS3JCuLNCR+0s64CM3IFpU+HcRrn0kEpHC9Cm9akqdGgMbG5+28RX2ggvh50NeJwcpScn22clLXCGoqCKGS94VU6rktLyeFzU06ouSlGBhAoHGqilwdb5nuzRRYdkv1QRN03CQ/TaLofzxTDlag86LxKrgmZEPkRphUQ+CkyQGVmDFRCd3xwQL0FcWvMIrLSNOI6k5oegf+DCcjJJjUqiRC774uHIBvN6WJ1BBKTS8phc6zC+cprL0JsjpILWxPlTrG+4bJLU/kqE2uxvO9Ou7afeEXIYsP9WiLQBScgmKU3UBx3qauXuP+9ZLrTtXBmKxnEwhxNE9K5uY+KzJdLINQ5ia2gadJQ13t3p7jJyWedLg4dcGXePS9MbzIEn4jkaC/kC8bMOvgGvk4qPOAYv9zRrCJqz7r3iOLRJkl1GwibMDYTwKBLdZd/bRLGXPIhjvT/pCve6iae4+U4OOnbZy+f/5OVvt2pMSyFUMYJJVY7G42o6qmd1OSqPVTlTICs5ozljvRwWIsQ2MJZzJ+Ru9+FrS2kl6Mu0vN/gtyVsBhM1Kejk9YSNp68l7JVsvTFW5R9ilb7pX6aKUvo/Vv8cKx1YH4ZBW7f8HVN1myLU7zx4zXVAatcJO9//96TCBh+X5k+he+e/JVGP2O4n/r1gZMUGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8780736083539210b469b3a6feaad380"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=8780736083539210b469b3a6feaad380^sys_idNOT IN00bf372483939210b469b3a6feaad344,00bf372483939210b469b3a6feaad351,04bf372483939210b469b3a6feaad340,04bf372483939210b469b3a6feaad347,08bf372483939210b469b3a6feaad34a,0cbf372483939210b469b3a6feaad34d,8c8b083483d39210b469b3a6feaad30d"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b1051ed5-dd28-4cf7-b1f7-eac8cdcb3418</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Timeout</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Currency Integration">8780736083539210b469b3a6feaad380</model>
+        <model_id>8780736083539210b469b3a6feaad380</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_8780736083539210b469b3a6feaad380</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>00bf372483939210b469b3a6feaad344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:56:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=f236dc03-9888-4b12-bb7a-112b4602692d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Currency Integration">8780736083539210b469b3a6feaad380</model>
+        <model_id>8780736083539210b469b3a6feaad380</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_8780736083539210b469b3a6feaad380</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>00bf372483939210b469b3a6feaad351</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:56:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=4cbc092f-af3e-492b-ac8e-3abbd85a4793</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_success</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Integration Success</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Currency Integration">8780736083539210b469b3a6feaad380</model>
+        <model_id>8780736083539210b469b3a6feaad380</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_8780736083539210b469b3a6feaad380</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>04bf372483939210b469b3a6feaad340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:56:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=e65e52ec-1f57-49ba-9003-525e079a0b69</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>active</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Active</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Currency Integration">8780736083539210b469b3a6feaad380</model>
+        <model_id>8780736083539210b469b3a6feaad380</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_8780736083539210b469b3a6feaad380</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>04bf372483939210b469b3a6feaad347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:56:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=dfd29b96-19d9-4dd6-808c-ad638e6106f9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current_try</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Current Try</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Currency Integration">8780736083539210b469b3a6feaad380</model>
+        <model_id>8780736083539210b469b3a6feaad380</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_8780736083539210b469b3a6feaad380</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>08bf372483939210b469b3a6feaad34a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:56:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=float,uiTypeLabel=Floating Point Number,uiUniqueId=d0db4617-c9be-452d-aee2-545041139e9f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>brl_currency</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">float</internal_type>
+        <label>BRL Currency</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Currency Integration">8780736083539210b469b3a6feaad380</model>
+        <model_id>8780736083539210b469b3a6feaad380</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_8780736083539210b469b3a6feaad380</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:56:59</sys_created_on>
+        <sys_id>0cbf372483939210b469b3a6feaad34d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:56:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d4ee17a4-9689-4a0f-812e-f2ed3d8cdd17</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>debug</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Debug</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Currency Integration">8780736083539210b469b3a6feaad380</model>
+        <model_id>8780736083539210b469b3a6feaad380</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_8780736083539210b469b3a6feaad380</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 22:48:35</sys_created_on>
+        <sys_id>8c8b083483d39210b469b3a6feaad30d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:48:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_8780736083539210b469b3a6feaad380^sys_idNOT INf9b8f7e883539210b469b3a6feaad30a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>refound_request_record</element>
+        <help/>
+        <hint/>
+        <label>Refound Request Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8780736083539210b469b3a6feaad380</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 21:26:31</sys_created_on>
+        <sys_id>f9b8f7e883539210b469b3a6feaad30a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refound System" source="x_1593190_refoun_0">b86c091083531210b469b3a6feaad353</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 21:26:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8780736083539210b469b3a6feaad380"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_8780736083539210b469b3a6feaad380"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8780736083539210b469b3a6feaad380"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>1c7febec83139210b469b3a6feaad3cc</sys_id>
+        <latest_snapshot>8780736083539210b469b3a6feaad380</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=1c7febec83139210b469b3a6feaad3cc"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=1c7febec83139210b469b3a6feaad3cc^sys_idNOT IN5b80736083539210b469b3a6feaad3b3"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"5b80736083539210b469b3a6feaad3b3","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Currency Integration">1c7febec83139210b469b3a6feaad3cc</plan_id>
+        <snapshot>3addc8f483d39210b469b3a6feaad3db</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 20:50:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5b80736083539210b469b3a6feaad3b3</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:57:19</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

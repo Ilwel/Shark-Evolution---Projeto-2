@@ -24,10 +24,10 @@
 	}
 
 	var splited = newValue.split('/');
-	var date = new Date(Date.UTC(Number(splited[2]),Number(splited[1] - 1), Number(splited[0] - 1), 3, 0, 0, 0));
+	var date = new Date(Number(splited[2]),Number(splited[1] - 1), Number(splited[0]), 0, 0, 0, 0);
 	var today = new Date();
 	if(date > today){
-		g_form.addErrorMessage("Date can't be after yesterday");
+		g_form.addErrorMessage("Date can't be after today");
 		g_form.setValue("spent_date", "");
    }else{
 		g_form.clearMessages();
@@ -43,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dcdc826c831b5210b469b3a6feaad305</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Date Validation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Refound System" source="x_1593190_refoun_0">b86c091083531210b469b3a6feaad353</sys_package>
@@ -51,7 +51,7 @@
         <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
         <sys_update_name>catalog_script_client_dcdc826c831b5210b469b3a6feaad305</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-21 17:22:22</sys_updated_on>
+        <sys_updated_on>2025-01-21 22:11:57</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
