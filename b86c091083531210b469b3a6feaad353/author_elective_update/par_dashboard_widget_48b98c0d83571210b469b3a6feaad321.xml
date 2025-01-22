@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">00b98c0d83571210b469b3a6feaad31f</canvas>
+        <component display_value="List - Simple">2b1c080881e05dc63b917044290b233f</component>
+        <component_props>{"table":"sc_request","columnPreferenceKey":"","fixedQuery":"","followFilters":true,"listTitle":"All Active Tasks","columns":"","query":"active=true","groupByField":"","hideViewAll":false,"hideHighlightedValues":false,"showBorder":true,"bare":false,"highlightedValueConfigId":"","hideHighlightContent":false,"highlightContent":{"patterns":[],"color":""},"hideLinks":false,"nrlLandmark":true,"wordWrap":false,"overrideWordWrapUserPref":false,"maxCharLimit":4000,"hideEmptyStateImage":false,"hidePersonalization":false,"hideDotwalk":false,"hideColumnReorder":false,"hideRowSelector":false,"hideColumnGrouping":false,"hideColumnResizing":false,"hideColumnFiltering":false,"hideColumnSorting":false,"hideHeader":false,"hideTitle":false,"hideTitleRowCount":false,"hideLastRefreshedText":false,"hideRefreshButton":false,"hideInlineEditing":false,"isDashboard":true,"id":"groupByField","value":"","noDebounce":true,"propLabel":"Bare"}</component_props>
+        <h>16</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-22 17:19:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>48b98c0d83571210b469b3a6feaad321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Refound System" source="x_1593190_refoun_0">b86c091083531210b469b3a6feaad353</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_update_name>par_dashboard_widget_48b98c0d83571210b469b3a6feaad321</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 17:19:09</sys_updated_on>
+        <visualization/>
+        <w>30</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refound System">b86c091083531210b469b3a6feaad353</application>
+        <file_path/>
+        <instance_id>61a4e6d3dbbc4698ebdd2a59139619ae</instance_id>
+        <instance_name>dev241594</instance_name>
+        <name>par_dashboard_widget_48b98c0d83571210b469b3a6feaad321</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">00b98c0d83571210b469b3a6feaad31f</canvas><component display_value="List - Simple">2b1c080881e05dc63b917044290b233f</component><component_props>{"table":"sc_request","columnPreferenceKey":"","fixedQuery":"","followFilters":true,"listTitle":"All Active Tasks","columns":"","query":"active=true","groupByField":"","hideViewAll":false,"hideHighlightedValues":false,"showBorder":true,"bare":false,"highlightedValueConfigId":"","hideHighlightContent":false,"highlightContent":{"patterns":[],"color":""},"hideLinks":false,"nrlLandmark":true,"wordWrap":false,"overrideWordWrapUserPref":false,"maxCharLimit":4000,"hideEmptyStateImage":false,"hidePersonalization":false,"hideDotwalk":false,"hideColumnReorder":false,"hideRowSelector":false,"hideColumnGrouping":false,"hideColumnResizing":false,"hideColumnFiltering":false,"hideColumnSorting":false,"hideHeader":false,"hideTitle":false,"hideTitleRowCount":false,"hideLastRefreshedText":false,"hideRefreshButton":false,"hideInlineEditing":false,"isDashboard":true,"id":"groupByField","value":"","noDebounce":true,"propLabel":"Bare"}</component_props><h>16</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-22 17:19:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>48b98c0d83571210b469b3a6feaad321</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Refound System" source="x_1593190_refoun_0">b86c091083531210b469b3a6feaad353</sys_package><sys_policy/><sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope><sys_update_name>par_dashboard_widget_48b98c0d83571210b469b3a6feaad321</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-22 17:19:09</sys_updated_on><visualization/><w>30</w><widget_props/><x>0</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-551870773</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>2851919483531210b469b3a6feaad362</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-22 17:19:09</sys_created_on>
+        <sys_id>50b9004d83571210b469b3a6feaad36c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1948f0669180000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 17:19:09</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>44b9004ddf5712107815dcce26f8856b</update_guid>
+        <update_guid_history>44b9004ddf5712107815dcce26f8856b:-551870773</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">58b9004d83571210b469b3a6feaad371</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-22 17:19:09</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>5993529a23534dec84d692c562072390</sys_id>
+        <sys_metadata>48b98c0d83571210b469b3a6feaad321</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refound System" source="x_1593190_refoun_0">b86c091083531210b469b3a6feaad353</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_scope_delete display_value="">1b7a3fe1fb9940089b466479728a7a40</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_48b98c0d83571210b469b3a6feaad321</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_48b98c0d83571210b469b3a6feaad321">50b9004d83571210b469b3a6feaad36c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 17:19:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
