@@ -3,7 +3,7 @@
         <canvas display_value="">4b3e0c8183971210b469b3a6feaad3b1</canvas>
         <component display_value="Horizontal bar">85855283b7e03010097cb81cde11a91d</component>
         <component_props>{"selectedElements":[],"configVersion":"23.0.0-ci-SNAPSHOT","chartVariation":"stacked","yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"showClosestSeriesOnHover":true,"xAxisTruncationType":"end","yAxisStyle":"clean","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":false,"dataLabelPosition":"middle","showStackedValues":"none","showOverlappingLabels":false,"colorConfig":{"type":"default"},"yAxisHidden":false,"newReporting":false,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Refound Request","sourceType":"table","tableOrViewName":"x_1593190_refoun_0_refound_request","filterQuery":"state=3","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE1OTMxOTBfcmVmb3VuXzBfcmVmb3VuZF9yZXF1ZXN0MTczNzU2NzU3OTY4OA==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"contextMenuActions":[],"headerTitle":"Top 5 Requesters - Approved Payments","headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"dataPassthrough":null,"metrics":[{"dataSource":"dGFibGV4XzE1OTMxOTBfcmVmb3VuXzBfcmVmb3VuZF9yZXF1ZXN0MTczNzU2NzU3OTY4OA==","id":"ZEdGaWJHVjRYekUxT1RNeE9UQmZjbVZtYjNWdVh6QmZjbVZtYjNWdVpGOXlaWEYxWlhOME1UY3pOelUyTnpVM09UWTRPQT09MTczNzU2NzU4MzA5NA==","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzE1OTMxOTBfcmVmb3VuXzBfcmVmb3VuZF9yZXF1ZXN0MTczNzU2NzU3OTY4OA==","groupByField":"opened_by","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":5,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"kyy4779n","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"id":"headerTitle","value":"Top 5 Requesters - Approved Payments","noDebounce":true,"propLabel":"Chart title"}</component_props>
-        <h>19</h>
+        <h>17</h>
         <name/>
         <stored_component/>
         <sys_class_name>par_dashboard_widget</sys_class_name>
@@ -12,19 +12,19 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bf2f000583971210b469b3a6feaad3e4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
-        <sys_package display_value="Refound System" source="x_1593190_refoun_0">b86c091083531210b469b3a6feaad353</sys_package>
+        <sys_package display_value="Refund System" source="x_1593190_refoun_0">b86c091083531210b469b3a6feaad353</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Refound System">b86c091083531210b469b3a6feaad353</sys_scope>
+        <sys_scope display_value="Refund System">b86c091083531210b469b3a6feaad353</sys_scope>
         <sys_update_name>par_dashboard_widget_bf2f000583971210b469b3a6feaad3e4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 17:43:09</sys_updated_on>
+        <sys_updated_on>2025-01-23 18:33:52</sys_updated_on>
         <visualization/>
         <w>25</w>
         <widget_props/>
         <x>0</x>
-        <y>0</y>
+        <y>18</y>
     </par_dashboard_widget>
 </record_update>
