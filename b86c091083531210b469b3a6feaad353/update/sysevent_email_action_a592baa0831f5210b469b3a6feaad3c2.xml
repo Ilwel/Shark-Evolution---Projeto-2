@@ -36,7 +36,7 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Hello ${opened_by.name}, your refound was reproved</p>
+        <message_html><![CDATA[<p>Hello ${opened_by.name}, your refund was reproved</p>
 <p>here is the reproval reason: ${reproval_reason}</p>]]></message_html>
         <message_list/>
         <message_text/>
@@ -51,7 +51,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>${number} - Refound Reproved</subject>
+        <subject>${number} - Refund Reproved</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -59,7 +59,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a592baa0831f5210b469b3a6feaad3c2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Refund Reproved</sys_name>
         <sys_overrides/>
         <sys_package display_value="Refund System" source="x_1593190_refoun_0">b86c091083531210b469b3a6feaad353</sys_package>
@@ -67,7 +67,7 @@
         <sys_scope display_value="Refund System">b86c091083531210b469b3a6feaad353</sys_scope>
         <sys_update_name>sysevent_email_action_a592baa0831f5210b469b3a6feaad3c2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 20:13:21</sys_updated_on>
+        <sys_updated_on>2025-01-22 20:26:54</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
